@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Adiss Expressions</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div  id="nav-logo">
+      <a class="navbar-brand" href="index.html">
+        <img class="mx-auto" src="assets/AddisExpressionsLogo.svg" alt="Bootstrap" width="150" height="39">
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 5%;">
+      <ul class="navbar-nav mr-auto mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="categories.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Politics</a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="single_post.html">Post</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <hr style="width: 90%; border-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+  <main id="main">
+    <section class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 d-flex align-items-center">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>{{ profile.address }}</p>
+              </div>
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>{{ profile.email }}</p>
+              </div>
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>{{ profile.phone }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="." method="post" role="form" class="email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>  
+  </main>
+  <hr style="width: 90%; border-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+  
+    <footer class="text-center text-lg-start text-white" style="background-color: #FFFFFF">
+      <section class="social-links d-flex justify-content-between p-4 rounded" style="background-color: #000000">
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/AddisExpressionsLogo.svg" alt="Bootstrap" width="150" height="39">
+                </a>
+              </h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #000000; height: 2px"/>
+              <p>
+                I believe in the power of sharing ideas. This blog is an accumulation of my thoughts and
+                experiences as an Addisababian currently living in the USA...
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Navigation</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #000000; height: 2px"/>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="single_post.html">Post</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Categories</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <ul class="list-unstyled">
+                  <li><a href="#">Love</a></li>
+                  <li><a href="#">Politics</a></li>
+                  <li><a href="#">Life</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Recent Post</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+              <ul class="list-unstyled">
+                <li><a href="">No Recent Posts Yet</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="width: 90%; border-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+      <div class="text-center p-3">
+        © 2023 Copyright:
+        <a href="http://{{ request.get_host }}">Ahatene</a>
+      </div>
+    </footer>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+  </body>
+</html>

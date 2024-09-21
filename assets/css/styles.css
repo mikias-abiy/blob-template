@@ -1,0 +1,309 @@
+/**
+ * Reseting css beheaviors to give all browsers a common ground
+ * to start from.
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html {
+    padding: 20px 10px 0 10px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5rem;
+	word-spacing: 0.1rem;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p a {
+	text-decoration: underline;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #000000;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #000000;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #000000;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info,
+.about .info,
+.post-detail .info {
+	border-top: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+	padding: 30px;
+	background: #fff;
+	width: 100%;
+	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+  
+.contact .info i {
+	font-size: 20px;
+	color: #000000;
+	float: left;
+	width: 44px;
+	height: 44px;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+  }
+
+.contact .info h4 {
+	padding: 0 0 0 60px;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	color: #000000;
+}
+  
+.contact .info p {
+	padding: 0 0 10px 60px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+  
+.contact .info .email p {
+	padding-top: 5px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+	background: #000000;
+	color: #fff;
+}
+  
+.contact .email-form {
+	width: 100%;
+	border-top: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+	padding: 30px;
+	background: #fff;
+	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+  
+.contact .email-form .form-group {
+	padding-bottom: 8px;
+}
+  
+.contact .email-form .validate {
+	display: none;
+	color: red;
+	margin: 0 0 15px 0;
+	font-weight: 400;
+	font-size: 13px;
+}
+  
+.contact .email-form .error-message {
+	display: none;
+	color: #fff;
+	background: #ed3c0d;
+	text-align: left;
+	padding: 15px;
+	font-weight: 600;
+}
+  
+.contact .email-form .error-message br+br {
+	margin-top: 25px;
+}
+  
+.contact .email-form .sent-message {
+	display: none;
+	color: #fff;
+	background: #18d26e;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+}
+  
+.contact .email-form .loading {
+	display: none;
+	background: #fff;
+	text-align: center;
+	padding: 15px;
+}
+  
+.contact .email-form .loading:before {
+	content: "";
+	display: inline-block;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	margin: 0 10px -6px 0;
+	border: 3px solid #18d26e;
+	border-top-color: #eee;
+	animation: animate-loading 1s linear infinite;
+}
+  
+.contact .email-form .form-group {
+	margin-bottom: 20px;
+}
+  
+.contact .email-form label {
+	padding-bottom: 8px;
+}
+  
+.contact .email-form input,
+.contact .email-form textarea {
+	border-radius: 0;
+	box-shadow: none;
+	font-size: 14px;
+	border-radius: 4px;
+}
+  
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+	border-color: #47b2e4;
+}
+  
+.contact .email-form input {
+	height: 44px;
+}
+  
+.contact .email-form textarea {
+	padding: 10px 12px;
+}
+  
+.contact .email-form button[type=submit] {
+	background: #000000;
+	border: 0;
+	padding: 12px 34px;
+	color: #fff;
+	transition: 0.4s;
+	border-radius: 50px;
+}
+  
+.contact .email-form button[type=submit]:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+  
+
+/* Nav bar styles */
+#nav-logo {
+    margin-left: 5%;
+}
+
+/* Footer styles */
+footer *  {
+	color: black;
+}
+footer .social-links * {
+	color: #FFFFFF;
+}
+
+footer .social-links a:hover i {
+	background-color: #FFFFFF;
+	color: #000000;
+	border-radius: 50%;
+}
+
+
+.filter-white{
+	filter: invert(100%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
